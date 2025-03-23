@@ -1,4 +1,4 @@
-#version 460
+#version 460 compatibility
 
 uniform sampler2D gtexture;
 uniform sampler2D lightmap;
@@ -40,5 +40,3 @@ void main() {
   outColor0 = vec4(pow(outputColor, vec3(1/2.2)), transparency);
 
 }
-
-// vec4(lightBrighness, lightBrighness, lightBrighness, transparency); //pow(outputColor, vec3(1/2.2))
